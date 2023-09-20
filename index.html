@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .correct {
+            color: black;
+            /* Default color for correct characters */
+        }
+
+        .incorrect {
+            color: red;
+            /* Color for incorrect characters */
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: white;">
+    <div id="app" class="flex flex-col justify-center items-center h-[100vh] space-y-8 ">
+        <h1 class="" style="text-align: center; color: purple; font-size: xx-large;">Welcome to SherTyping Hub</h1>
+        <div id="text-container" class="italic text-xl text-center mx-32 text-gray-400">
+            <!-- Display text to be typed here -->
+        </div>
+        <input type="text" id="user-input" class="border border-white outline-none text-xs  " autofocus>
+        <div id="timer">Time: 0s</div>
+        <div id="result" class="text-4xl italic "></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
